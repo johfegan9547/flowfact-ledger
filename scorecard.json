@@ -1,0 +1,76 @@
+{
+ "as_of": "2026-10-04",
+ "version": "ff-1",
+ "days_chained": 1,
+ "head": "d4af669fcd2a82191442631f259fb5b6db0683d0543dbab16e37e5b6042bf2ca",
+ "released_through": "2026-09-04",
+ "live": {
+  "labels": 16,
+  "horizons": {
+   "5": {
+    "by_label": {
+     "flow": {
+      "n": 0,
+      "revert_rate": null,
+      "mean_reversal": null
+     },
+     "fact": {
+      "n": 0,
+      "revert_rate": null,
+      "mean_reversal": null
+     },
+     "mixed": {
+      "n": 0,
+      "revert_rate": null,
+      "mean_reversal": null
+     },
+     "unknown": {
+      "n": 0,
+      "revert_rate": null,
+      "mean_reversal": null
+     }
+    },
+    "spread": null,
+    "t": null,
+    "verdict": "not enough scored labels yet",
+    "need": {
+     "per_label": 300,
+     "t": 2.0
+    }
+   },
+   "21": {
+    "by_label": {
+     "flow": {
+      "n": 0,
+      "revert_rate": null,
+      "mean_reversal": null
+     },
+     "fact": {
+      "n": 0,
+      "revert_rate": null,
+      "mean_reversal": null
+     },
+     "mixed": {
+      "n": 0,
+      "revert_rate": null,
+      "mean_reversal": null
+     },
+     "unknown": {
+      "n": 0,
+      "revert_rate": null,
+      "mean_reversal": null
+     }
+    },
+    "spread": null,
+    "t": null,
+    "verdict": "not enough scored labels yet",
+    "need": {
+     "per_label": 300,
+     "t": 2.0
+    }
+   }
+  },
+  "kind": "live"
+ },
+ "backtest": null
+}
