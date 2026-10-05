@@ -9,15 +9,31 @@ Every day's labels are written to one file and fingerprinted into a hash chain t
 market open. The labels themselves are published here 30 days later. Anyone can check that no day was
 changed after the fact: `python verify.py` (no dependencies) recomputes every fingerprint and every link.
 
-Each label is scored 5 and 21 trading days later. The claim under test: **moves labelled flow give back more
-than moves labelled fact.** The verdict needs at least 300 scored labels of each and a t-statistic of at least 2.
+Each label is scored 5 and 21 trading days later. The claim under test: **moves labelled fact keep going more
+than moves labelled flow** (news drifts; no-news moves stall or give some back). The verdict needs at least 300
+scored labels of each and a t-statistic of at least 2, computed with moves grouped by week (5 days) or month
+(21 days) so that one busy day cannot count as hundreds of independent results, and with the most extreme 1% of
+outcomes at each end capped.
 
-## Status (2026-10-04)
+## Status (2026-10-05)
 
 - days chained: **1** · head: `d4af669fcd2a82191442631f259fb5b6db0683d0543dbab16e37e5b6042bf2ca`
 - labels so far: **16**
-- 5 trading days: not enough scored labels yet (flow n=0, fact n=0, spread None, t None)
-- 21 trading days: not enough scored labels yet (flow n=0, fact n=0, spread None, t None)
+- 5 trading days: not enough scored labels yet (flow n=0, fact n=0, gap None, clustered t None)
+- 21 trading days: not enough scored labels yet (flow n=0, fact n=0, gap None, clustered t None)
+
+## Pre-registered claims
+
+Written down, fingerprinted and published before the live data that will judge them. A registered claim is never edited; only labels dated on or after its *counts from* date count. Full register: `claims.jsonl`.
+
+| id | claim | registered | counts from | horizon | live gap · t · verdict | backtest gap · t |
+|---|---|---|---|---|---|---|
+| P1 | Fact-labelled moves keep going more than flow-labelled moves (all big moves) | 2026-10-05 | 2026-10-02 | 5d | — · None · not enough scored labels yet (need 300 of each) | — · None |
+| P1 | Fact-labelled moves keep going more than flow-labelled moves (all big moves) | 2026-10-05 | 2026-10-02 | 21d | — · None · not enough scored labels yet (need 300 of each) | — · None |
+| S1 | No-news drops recover more than news drops over a month (down moves) | 2026-10-05 | 2026-10-05 | 21d | — · None · not enough scored labels yet (need 200 of each) | — · None |
+| S2 | The gap is clearest for 3–5σ moves | 2026-10-05 | 2026-10-05 | 5d | — · None · not enough scored labels yet (need 200 of each) | — · None |
+| S2 | The gap is clearest for 3–5σ moves | 2026-10-05 | 2026-10-05 | 21d | — · None · not enough scored labels yet (need 200 of each) | — · None |
+| X1 | Up moves over a month — watching, no prediction | 2026-10-05 | 2026-10-05 | 21d | — · None · watching — no prediction registered | — · None |
 
 ## Files
 
@@ -25,6 +41,7 @@ than moves labelled fact.** The verdict needs at least 300 scored labels of each
   and `chain_sha256 = sha256(prev + date + file_sha256)`
 - `labels/YYYY/YYYY-MM-DD.jsonl` — the day's labels, released 30 days after the day
 - `scorecard.json` — the live scorecard (and, kept separate, the backtest)
+- `claims.jsonl` — the register of pre-registered claims: id, date registered, date it counts from, SHA-256 of the definition
 - `verify.py` — the verifier
 
 Labels are research about why prices moved. They are not investment advice and not a recommendation to buy or

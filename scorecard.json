@@ -1,11 +1,12 @@
 {
- "as_of": "2026-10-04",
+ "as_of": "2026-10-05",
  "version": "ff-1",
  "days_chained": 1,
  "head": "d4af669fcd2a82191442631f259fb5b6db0683d0543dbab16e37e5b6042bf2ca",
- "released_through": "2026-09-04",
+ "released_through": "2026-09-05",
  "live": {
   "labels": 16,
+  "method": "v2: clustered t (week \u22645d, month >5d), reversals winsorised 1%/99%",
   "horizons": {
    "5": {
     "by_label": {
@@ -31,7 +32,11 @@
      }
     },
     "spread": null,
+    "spread_w": null,
     "t": null,
+    "t_naive": null,
+    "clusters": null,
+    "cluster_by": null,
     "verdict": "not enough scored labels yet",
     "need": {
      "per_label": 300,
@@ -62,7 +67,11 @@
      }
     },
     "spread": null,
+    "spread_w": null,
     "t": null,
+    "t_naive": null,
+    "clusters": null,
+    "cluster_by": null,
     "verdict": "not enough scored labels yet",
     "need": {
      "per_label": 300,
@@ -70,7 +79,566 @@
     }
    }
   },
-  "kind": "live"
+  "kind": "live",
+  "claims": [
+   {
+    "id": "P1",
+    "name": "Fact-labelled moves keep going more than flow-labelled moves (all big moves)",
+    "registered": "2026-10-05",
+    "counts_from": "2026-10-02",
+    "sha256": "4ce85042cebbe710205d361f4b9f5cecb19bfdadea6dd2c6930a4f1711e17a64",
+    "test": "gap_gt_0",
+    "horizons": {
+     "5": {
+      "n_flow": 0,
+      "n_fact": 0,
+      "spread": null,
+      "t_clustered": null,
+      "verdict": "not enough scored labels yet (need 300 of each)"
+     },
+     "21": {
+      "n_flow": 0,
+      "n_fact": 0,
+      "spread": null,
+      "t_clustered": null,
+      "verdict": "not enough scored labels yet (need 300 of each)"
+     }
+    }
+   },
+   {
+    "id": "S1",
+    "name": "No-news drops recover more than news drops over a month (down moves)",
+    "registered": "2026-10-05",
+    "counts_from": "2026-10-05",
+    "sha256": "9c8329ff43250b7b0dba04669aec239b83a84704c46bafb7056795d99effbfa4",
+    "test": "gap_gt_0",
+    "horizons": {
+     "21": {
+      "n_flow": 0,
+      "n_fact": 0,
+      "spread": null,
+      "t_clustered": null,
+      "verdict": "not enough scored labels yet (need 200 of each)"
+     }
+    }
+   },
+   {
+    "id": "S2",
+    "name": "The gap is clearest for 3\u20135\u03c3 moves",
+    "registered": "2026-10-05",
+    "counts_from": "2026-10-05",
+    "sha256": "ce97829652bdb90522f99022055665ab2ff5a8cc98aecfe2917b913365d3bebe",
+    "test": "gap_gt_0",
+    "horizons": {
+     "5": {
+      "n_flow": 0,
+      "n_fact": 0,
+      "spread": null,
+      "t_clustered": null,
+      "verdict": "not enough scored labels yet (need 200 of each)"
+     },
+     "21": {
+      "n_flow": 0,
+      "n_fact": 0,
+      "spread": null,
+      "t_clustered": null,
+      "verdict": "not enough scored labels yet (need 200 of each)"
+     }
+    }
+   },
+   {
+    "id": "X1",
+    "name": "Up moves over a month \u2014 watching, no prediction",
+    "registered": "2026-10-05",
+    "counts_from": "2026-10-05",
+    "sha256": "4ab506db4c9d92978f744ee90d8f5a6777595c21c8b63d0f665964b8698d2779",
+    "test": "two_sided",
+    "horizons": {
+     "21": {
+      "n_flow": 0,
+      "n_fact": 0,
+      "spread": null,
+      "t_clustered": null,
+      "verdict": "watching \u2014 no prediction registered"
+     }
+    }
+   }
+  ]
  },
- "backtest": null
+ "backtest": {
+  "labels": 87347,
+  "method": "v2: clustered t (week \u22645d, month >5d), reversals winsorised 1%/99%",
+  "horizons": {
+   "5": {
+    "by_label": {
+     "flow": {
+      "n": 64177,
+      "revert_rate": 0.519,
+      "mean_reversal": 0.0015,
+      "median_reversal": 0.0022,
+      "sd": 0.0868
+     },
+     "fact": {
+      "n": 17070,
+      "revert_rate": 0.479,
+      "mean_reversal": -0.004,
+      "median_reversal": -0.0023,
+      "sd": 0.1693
+     },
+     "mixed": {
+      "n": 5950,
+      "revert_rate": 0.537,
+      "mean_reversal": 0.0029,
+      "median_reversal": 0.004,
+      "sd": 0.0899
+     },
+     "unknown": {
+      "n": 0,
+      "revert_rate": null,
+      "mean_reversal": null
+     }
+    },
+    "spread": 0.0055,
+    "spread_w": 0.0046,
+    "t": 5.63,
+    "t_naive": 4.09,
+    "clusters": 299,
+    "cluster_by": "week",
+    "verdict": "WORKING \u2014 fact-labelled moves kept going more than flow-labelled ones",
+    "need": {
+     "per_label": 300,
+     "t": 2.0
+    }
+   },
+   "21": {
+    "by_label": {
+     "flow": {
+      "n": 63632,
+      "revert_rate": 0.524,
+      "mean_reversal": 0.0028,
+      "median_reversal": 0.0055,
+      "sd": 0.1722
+     },
+     "fact": {
+      "n": 17025,
+      "revert_rate": 0.491,
+      "mean_reversal": -0.0034,
+      "median_reversal": -0.0022,
+      "sd": 0.1306
+     },
+     "mixed": {
+      "n": 5894,
+      "revert_rate": 0.519,
+      "mean_reversal": 0.0019,
+      "median_reversal": 0.005,
+      "sd": 0.2695
+     },
+     "unknown": {
+      "n": 0,
+      "revert_rate": null,
+      "mean_reversal": null
+     }
+    },
+    "spread": 0.0062,
+    "spread_w": 0.0062,
+    "t": 3.42,
+    "t_naive": 5.08,
+    "clusters": 69,
+    "cluster_by": "month",
+    "verdict": "WORKING \u2014 fact-labelled moves kept going more than flow-labelled ones",
+    "need": {
+     "per_label": 300,
+     "t": 2.0
+    }
+   }
+  },
+  "kind": "backtest",
+  "caveats": [
+   "BACKTEST, not the live record: labelled after the fact from EDGAR filings and prices only (no news archive, no Claude adjudication \u2014 'mixed' stays mixed). Here 'flow' means 'no SEC filing', so analyst calls, peer news and sector news count as flow; the live labels are cleaner.",
+   "Survivorship: the universe is TODAY's \u2265$2B names, so companies that shrank, were bought or went bust over the period are missing.",
+   "Only the hashed live chain counts towards the published track record."
+  ],
+  "breakdown": {
+   "direction": {
+    "down moves": {
+     "5": {
+      "n_flow": 30713,
+      "n_fact": 8122,
+      "flow_mean": 0.0038,
+      "fact_mean": -0.001,
+      "flow_mean_w": 0.0027,
+      "fact_mean_w": -0.002,
+      "flow_median": 0.0017,
+      "fact_median": -0.0028,
+      "spread": 0.0047,
+      "spread_w": 0.0047,
+      "t_naive": 4.45,
+      "t_clustered": 3.95,
+      "clusters": 299,
+      "cluster_by": "week"
+     },
+     "21": {
+      "n_flow": 30396,
+      "n_fact": 8087,
+      "flow_mean": 0.0096,
+      "fact_mean": -0.0007,
+      "flow_mean_w": 0.0069,
+      "fact_mean_w": -0.0014,
+      "flow_median": 0.0024,
+      "fact_median": -0.0055,
+      "spread": 0.0103,
+      "spread_w": 0.0083,
+      "t_naive": 6.47,
+      "t_clustered": 2.72,
+      "clusters": 69,
+      "cluster_by": "month"
+     }
+    },
+    "up moves": {
+     "5": {
+      "n_flow": 33464,
+      "n_fact": 8948,
+      "flow_mean": -0.0007,
+      "fact_mean": -0.0068,
+      "flow_mean_w": 0.0007,
+      "fact_mean_w": -0.0038,
+      "flow_median": 0.0027,
+      "fact_median": -0.0018,
+      "spread": 0.0061,
+      "spread_w": 0.0044,
+      "t_naive": 2.59,
+      "t_clustered": 3.32,
+      "clusters": 299,
+      "cluster_by": "week"
+     },
+     "21": {
+      "n_flow": 33236,
+      "n_fact": 8938,
+      "flow_mean": -0.0035,
+      "fact_mean": -0.0058,
+      "flow_mean_w": 0.0004,
+      "fact_mean_w": -0.0036,
+      "flow_median": 0.0085,
+      "fact_median": 0.001,
+      "spread": 0.0024,
+      "spread_w": 0.004,
+      "t_naive": 1.31,
+      "t_clustered": 1.58,
+      "clusters": 69,
+      "cluster_by": "month"
+     }
+    }
+   },
+   "size": {
+    "2\u20133\u03c3": {
+     "5": {
+      "n_flow": 45394,
+      "n_fact": 5607,
+      "flow_mean": 0.0014,
+      "fact_mean": -0.0022,
+      "flow_mean_w": 0.0016,
+      "fact_mean_w": -0.0024,
+      "flow_median": 0.0018,
+      "fact_median": -0.001,
+      "spread": 0.0036,
+      "spread_w": 0.004,
+      "t_naive": 2.38,
+      "t_clustered": 4.0,
+      "clusters": 299,
+      "cluster_by": "week"
+     },
+     "21": {
+      "n_flow": 44975,
+      "n_fact": 5588,
+      "flow_mean": 0.0022,
+      "fact_mean": -0.0002,
+      "flow_mean_w": 0.0033,
+      "fact_mean_w": 0.0016,
+      "flow_median": 0.0048,
+      "fact_median": 0.0006,
+      "spread": 0.0024,
+      "spread_w": 0.0017,
+      "t_naive": 1.07,
+      "t_clustered": 0.84,
+      "clusters": 69,
+      "cluster_by": "month"
+     }
+    },
+    "3\u20135\u03c3": {
+     "5": {
+      "n_flow": 16363,
+      "n_fact": 5616,
+      "flow_mean": 0.0017,
+      "fact_mean": -0.0086,
+      "flow_mean_w": 0.002,
+      "fact_mean_w": -0.0051,
+      "flow_median": 0.003,
+      "fact_median": -0.0042,
+      "spread": 0.0103,
+      "spread_w": 0.0071,
+      "t_naive": 2.84,
+      "t_clustered": 5.17,
+      "clusters": 299,
+      "cluster_by": "week"
+     },
+     "21": {
+      "n_flow": 16257,
+      "n_fact": 5601,
+      "flow_mean": 0.0041,
+      "fact_mean": -0.0062,
+      "flow_mean_w": 0.0052,
+      "fact_mean_w": -0.0053,
+      "flow_median": 0.0065,
+      "fact_median": -0.0039,
+      "spread": 0.0102,
+      "spread_w": 0.0106,
+      "t_naive": 5.32,
+      "t_clustered": 3.62,
+      "clusters": 69,
+      "cluster_by": "month"
+     }
+    },
+    "5\u03c3+": {
+     "5": {
+      "n_flow": 2420,
+      "n_fact": 5847,
+      "flow_mean": 0.0008,
+      "fact_mean": -0.0014,
+      "flow_mean_w": 0.0033,
+      "fact_mean_w": -0.0011,
+      "flow_median": 0.0055,
+      "fact_median": -0.0015,
+      "spread": 0.0022,
+      "spread_w": 0.0045,
+      "t_naive": 0.78,
+      "t_clustered": 1.83,
+      "clusters": 298,
+      "cluster_by": "week"
+     },
+     "21": {
+      "n_flow": 2400,
+      "n_fact": 5836,
+      "flow_mean": 0.0038,
+      "fact_mean": -0.0038,
+      "flow_mean_w": 0.0049,
+      "fact_mean_w": -0.0032,
+      "flow_median": 0.0094,
+      "fact_median": -0.0027,
+      "spread": 0.0076,
+      "spread_w": 0.0081,
+      "t_naive": 1.57,
+      "t_clustered": 1.75,
+      "clusters": 69,
+      "cluster_by": "month"
+     }
+    }
+   },
+   "year": {
+    "2021": {
+     "5": {
+      "n_flow": 10001,
+      "n_fact": 2227,
+      "flow_mean": 0.001,
+      "fact_mean": -0.0035,
+      "flow_mean_w": 0.0015,
+      "fact_mean_w": -0.0023,
+      "flow_median": 0.0013,
+      "fact_median": -0.0032,
+      "spread": 0.0045,
+      "spread_w": 0.0038,
+      "t_naive": 2.54,
+      "t_clustered": 1.83,
+      "clusters": 52,
+      "cluster_by": "week"
+     },
+     "21": {
+      "n_flow": 10000,
+      "n_fact": 2227,
+      "flow_mean": 0.0056,
+      "fact_mean": -0.0016,
+      "flow_mean_w": 0.0069,
+      "fact_mean_w": -0.0004,
+      "flow_median": 0.0066,
+      "fact_median": -0.0032,
+      "spread": 0.0072,
+      "spread_w": 0.0073,
+      "t_naive": 2.35,
+      "t_clustered": 1.46,
+      "clusters": 12,
+      "cluster_by": "month"
+     }
+    },
+    "2022": {
+     "5": {
+      "n_flow": 11908,
+      "n_fact": 2841,
+      "flow_mean": 0.0034,
+      "fact_mean": -0.0057,
+      "flow_mean_w": 0.0033,
+      "fact_mean_w": -0.006,
+      "flow_median": 0.0031,
+      "fact_median": -0.004,
+      "spread": 0.0091,
+      "spread_w": 0.0093,
+      "t_naive": 5.56,
+      "t_clustered": 4.85,
+      "clusters": 52,
+      "cluster_by": "week"
+     },
+     "21": {
+      "n_flow": 11908,
+      "n_fact": 2841,
+      "flow_mean": 0.0055,
+      "fact_mean": -0.0073,
+      "flow_mean_w": 0.0053,
+      "fact_mean_w": -0.0066,
+      "flow_median": 0.004,
+      "fact_median": -0.007,
+      "spread": 0.0128,
+      "spread_w": 0.0119,
+      "t_naive": 4.53,
+      "t_clustered": 2.99,
+      "clusters": 12,
+      "cluster_by": "month"
+     }
+    },
+    "2023": {
+     "5": {
+      "n_flow": 10486,
+      "n_fact": 2978,
+      "flow_mean": 0.0003,
+      "fact_mean": -0.0019,
+      "flow_mean_w": 0.0006,
+      "fact_mean_w": -0.0021,
+      "flow_median": 0.002,
+      "fact_median": -0.0013,
+      "spread": 0.0022,
+      "spread_w": 0.0027,
+      "t_naive": 1.34,
+      "t_clustered": 1.49,
+      "clusters": 52,
+      "cluster_by": "week"
+     },
+     "21": {
+      "n_flow": 10486,
+      "n_fact": 2978,
+      "flow_mean": -0.0024,
+      "fact_mean": -0.0024,
+      "flow_mean_w": -0.001,
+      "fact_mean_w": -0.0022,
+      "flow_median": 0.0019,
+      "fact_median": -0.0003,
+      "spread": -0.0001,
+      "spread_w": 0.0012,
+      "t_naive": -0.02,
+      "t_clustered": 0.27,
+      "clusters": 12,
+      "cluster_by": "month"
+     }
+    },
+    "2024": {
+     "5": {
+      "n_flow": 10254,
+      "n_fact": 3223,
+      "flow_mean": 0.0025,
+      "fact_mean": -0.0041,
+      "flow_mean_w": 0.0025,
+      "fact_mean_w": -0.0034,
+      "flow_median": 0.003,
+      "fact_median": -0.0016,
+      "spread": 0.0066,
+      "spread_w": 0.0058,
+      "t_naive": 4.32,
+      "t_clustered": 2.57,
+      "clusters": 53,
+      "cluster_by": "week"
+     },
+     "21": {
+      "n_flow": 10254,
+      "n_fact": 3223,
+      "flow_mean": 0.0017,
+      "fact_mean": -0.0092,
+      "flow_mean_w": 0.0038,
+      "fact_mean_w": -0.0066,
+      "flow_median": 0.0068,
+      "fact_median": -0.005,
+      "spread": 0.0109,
+      "spread_w": 0.0104,
+      "t_naive": 3.34,
+      "t_clustered": 3.9,
+      "clusters": 12,
+      "cluster_by": "month"
+     }
+    },
+    "2025": {
+     "5": {
+      "n_flow": 11173,
+      "n_fact": 3293,
+      "flow_mean": 0.0028,
+      "fact_mean": -0.0069,
+      "flow_mean_w": 0.0031,
+      "fact_mean_w": -0.0024,
+      "flow_median": 0.0037,
+      "fact_median": -0.0028,
+      "spread": 0.0097,
+      "spread_w": 0.0054,
+      "t_naive": 1.55,
+      "t_clustered": 3.14,
+      "clusters": 53,
+      "cluster_by": "week"
+     },
+     "21": {
+      "n_flow": 11173,
+      "n_fact": 3293,
+      "flow_mean": 0.0047,
+      "fact_mean": 0.0004,
+      "flow_mean_w": 0.0065,
+      "fact_mean_w": 0.0009,
+      "flow_median": 0.0099,
+      "fact_median": 0.0022,
+      "spread": 0.0043,
+      "spread_w": 0.0056,
+      "t_naive": 1.5,
+      "t_clustered": 1.0,
+      "clusters": 12,
+      "cluster_by": "month"
+     }
+    },
+    "2026": {
+     "5": {
+      "n_flow": 10355,
+      "n_fact": 2508,
+      "flow_mean": -0.0016,
+      "fact_mean": -0.0013,
+      "flow_mean_w": -0.001,
+      "fact_mean_w": -0.0009,
+      "flow_median": -0.0002,
+      "fact_median": -0.0003,
+      "spread": -0.0003,
+      "spread_w": -0.0001,
+      "t_naive": -0.2,
+      "t_clustered": -0.04,
+      "clusters": 39,
+      "cluster_by": "week"
+     },
+     "21": {
+      "n_flow": 9811,
+      "n_fact": 2463,
+      "flow_mean": 0.0011,
+      "fact_mean": 0.0009,
+      "flow_mean_w": 0.0011,
+      "fact_mean_w": 0.0017,
+      "flow_median": 0.0022,
+      "fact_median": 0.0018,
+      "spread": 0.0002,
+      "spread_w": -0.0006,
+      "t_naive": 0.07,
+      "t_clustered": -0.17,
+      "clusters": 9,
+      "cluster_by": "month"
+     }
+    }
+   }
+  }
+ }
 }
