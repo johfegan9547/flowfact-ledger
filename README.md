@@ -1,6 +1,6 @@
 # FlowFact ledger
 
-Every US stock worth $2B or more that makes a big move — at least 2 standard deviations of its own recent
+Every US common stock worth $2B or more (no funds, preferreds or warrants) that makes a big move — at least 2 standard deviations of its own recent
 market-adjusted moves and at least 3% — gets one label after the close: **fact** (real news about the company:
 an 8-K, earnings that moved it hard), **flow** (no company news: index changes, fund flows, rotation, tax selling,
 a no-news move), **mixed** or **unknown**.
@@ -15,10 +15,10 @@ scored labels of each and a t-statistic of at least 2, computed with moves group
 (21 days) so that one busy day cannot count as hundreds of independent results, and with the most extreme 1% of
 outcomes at each end capped.
 
-## Status (2026-10-07)
+## Status (2026-10-08)
 
-- days chained: **3** · head: `bdeaf5e6a9c14caff0d19737adbbe301bbbff91f361ba9688bc6b64b99110366`
-- labels so far: **96**
+- days chained: **4** · head: `b3fd8f7b916ae60a9772d5480a3ae9267e026f735b9e6aefacae27696807213b`
+- labels so far: **139**
 - 5 trading days: not enough scored labels yet (flow n=0, fact n=0, gap None, clustered t None)
 - 21 trading days: not enough scored labels yet (flow n=0, fact n=0, gap None, clustered t None)
 
