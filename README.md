@@ -15,10 +15,10 @@ scored labels of each and a t-statistic of at least 2, computed with moves group
 (21 days) so that one busy day cannot count as hundreds of independent results, and with the most extreme 1% of
 outcomes at each end capped.
 
-## Status (2026-10-08)
+## Status (2026-10-09)
 
-- days chained: **4** · head: `b3fd8f7b916ae60a9772d5480a3ae9267e026f735b9e6aefacae27696807213b`
-- labels so far: **139**
+- days chained: **5** · head: `8e58c8ff9ecc35f50c44d9dda0437a618b81f1491f6ff319f6aa3100e3391520`
+- labels so far: **179**
 - 5 trading days: not enough scored labels yet (flow n=0, fact n=0, gap None, clustered t None)
 - 21 trading days: not enough scored labels yet (flow n=0, fact n=0, gap None, clustered t None)
 

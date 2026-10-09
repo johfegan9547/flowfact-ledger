@@ -1,11 +1,11 @@
 {
- "as_of": "2026-10-08",
+ "as_of": "2026-10-09",
  "version": "ff-1",
- "days_chained": 4,
- "head": "b3fd8f7b916ae60a9772d5480a3ae9267e026f735b9e6aefacae27696807213b",
- "released_through": "2026-09-08",
+ "days_chained": 5,
+ "head": "8e58c8ff9ecc35f50c44d9dda0437a618b81f1491f6ff319f6aa3100e3391520",
+ "released_through": "2026-09-09",
  "live": {
-  "labels": 139,
+  "labels": 179,
   "method": "v2: clustered t (week \u22645d, month >5d), reversals winsorised 1%/99%",
   "horizons": {
    "5": {
@@ -164,7 +164,7 @@
     }
    }
   ],
-  "not_common_excluded": 4
+  "not_common_excluded": 6
  },
  "backtest": {
   "labels": 84899,
