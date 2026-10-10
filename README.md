@@ -15,11 +15,11 @@ scored labels of each and a t-statistic of at least 2, computed with moves group
 (21 days) so that one busy day cannot count as hundreds of independent results, and with the most extreme 1% of
 outcomes at each end capped.
 
-## Status (2026-10-09)
+## Status (2026-10-10)
 
-- days chained: **5** · head: `8e58c8ff9ecc35f50c44d9dda0437a618b81f1491f6ff319f6aa3100e3391520`
-- labels so far: **179**
-- 5 trading days: not enough scored labels yet (flow n=0, fact n=0, gap None, clustered t None)
+- days chained: **6** · head: `f30e470c1179bcf59b589dd2561a77e916806ee5176f5c786ecde033cc08408a`
+- labels so far: **212**
+- 5 trading days: not enough scored labels yet (flow n=13, fact n=2, gap -0.1005, clustered t None)
 - 21 trading days: not enough scored labels yet (flow n=0, fact n=0, gap None, clustered t None)
 
 ## Pre-registered claims
@@ -28,7 +28,7 @@ Written down, fingerprinted and published before the live data that will judge t
 
 | id | claim | registered | counts from | horizon | live gap · t · verdict | backtest gap · t |
 |---|---|---|---|---|---|---|
-| P1 | Fact-labelled moves keep going more than flow-labelled moves (all big moves) | 2026-10-05 | 2026-10-02 | 5d | — · None · not enough scored labels yet (need 300 of each) | +0.47% · 5.76 |
+| P1 | Fact-labelled moves keep going more than flow-labelled moves (all big moves) | 2026-10-05 | 2026-10-02 | 5d | -10.05% · None · not enough scored labels yet (need 300 of each) | +0.47% · 5.76 |
 | P1 | Fact-labelled moves keep going more than flow-labelled moves (all big moves) | 2026-10-05 | 2026-10-02 | 21d | — · None · not enough scored labels yet (need 300 of each) | +0.61% · 3.41 |
 | S1 | No-news drops recover more than news drops over a month (down moves) | 2026-10-05 | 2026-10-05 | 21d | — · None · not enough scored labels yet (need 200 of each) | +0.82% · 2.67 |
 | S2 | The gap is clearest for 3–5σ moves | 2026-10-05 | 2026-10-05 | 5d | — · None · not enough scored labels yet (need 200 of each) | +0.74% · 5.3 |

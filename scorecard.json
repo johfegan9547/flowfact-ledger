@@ -1,29 +1,35 @@
 {
- "as_of": "2026-10-09",
+ "as_of": "2026-10-10",
  "version": "ff-1",
- "days_chained": 5,
- "head": "8e58c8ff9ecc35f50c44d9dda0437a618b81f1491f6ff319f6aa3100e3391520",
- "released_through": "2026-09-09",
+ "days_chained": 6,
+ "head": "f30e470c1179bcf59b589dd2561a77e916806ee5176f5c786ecde033cc08408a",
+ "released_through": "2026-09-10",
  "live": {
-  "labels": 179,
+  "labels": 212,
   "method": "v2: clustered t (week \u22645d, month >5d), reversals winsorised 1%/99%",
   "horizons": {
    "5": {
     "by_label": {
      "flow": {
-      "n": 0,
-      "revert_rate": null,
-      "mean_reversal": null
+      "n": 13,
+      "revert_rate": 0.385,
+      "mean_reversal": -0.0205,
+      "median_reversal": -0.0086,
+      "sd": 0.0892
      },
      "fact": {
-      "n": 0,
-      "revert_rate": null,
-      "mean_reversal": null
+      "n": 2,
+      "revert_rate": 1.0,
+      "mean_reversal": 0.0799,
+      "median_reversal": 0.0799,
+      "sd": 0.0398
      },
      "mixed": {
-      "n": 0,
-      "revert_rate": null,
-      "mean_reversal": null
+      "n": 1,
+      "revert_rate": 0.0,
+      "mean_reversal": -0.0458,
+      "median_reversal": -0.0458,
+      "sd": null
      },
      "unknown": {
       "n": 0,
@@ -31,12 +37,12 @@
       "mean_reversal": null
      }
     },
-    "spread": null,
-    "spread_w": null,
+    "spread": -0.1005,
+    "spread_w": -0.1005,
     "t": null,
-    "t_naive": null,
-    "clusters": null,
-    "cluster_by": null,
+    "t_naive": -2.12,
+    "clusters": 1,
+    "cluster_by": "week",
     "verdict": "not enough scored labels yet",
     "need": {
      "per_label": 300,
@@ -90,10 +96,20 @@
     "test": "gap_gt_0",
     "horizons": {
      "5": {
-      "n_flow": 0,
-      "n_fact": 0,
-      "spread": null,
+      "n_flow": 13,
+      "n_fact": 2,
+      "flow_mean": -0.0205,
+      "fact_mean": 0.0799,
+      "flow_mean_w": -0.0205,
+      "fact_mean_w": 0.0799,
+      "flow_median": -0.0086,
+      "fact_median": 0.0799,
+      "spread": -0.1005,
+      "spread_w": -0.1005,
+      "t_naive": -2.12,
       "t_clustered": null,
+      "clusters": 1,
+      "cluster_by": "week",
       "verdict": "not enough scored labels yet (need 300 of each)"
      },
      "21": {
@@ -164,7 +180,7 @@
     }
    }
   ],
-  "not_common_excluded": 6
+  "not_common_excluded": 7
  },
  "backtest": {
   "labels": 84899,
