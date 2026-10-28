@@ -1,28 +1,28 @@
 {
- "as_of": "2026-10-27",
+ "as_of": "2026-10-28",
  "version": "ff-1",
- "days_chained": 18,
- "head": "495dda83805218c25b64b500f93a1fa9e26ccd12f631bcd3b8b980a48e68eb97",
- "released_through": "2026-09-27",
+ "days_chained": 19,
+ "head": "97672539459f5461dd996dee12381abadbd3cde6d3b5c38c8f4c14dada348ed0",
+ "released_through": "2026-09-28",
  "live": {
-  "labels": 1028,
+  "labels": 1097,
   "method": "v2: clustered t (week \u22645d, month >5d), reversals winsorised 1%/99%",
   "horizons": {
    "5": {
     "by_label": {
      "flow": {
-      "n": 541,
-      "revert_rate": 0.381,
-      "mean_reversal": -0.0129,
+      "n": 558,
+      "revert_rate": 0.38,
+      "mean_reversal": -0.0126,
       "median_reversal": -0.0152,
-      "sd": 0.0614
+      "sd": 0.0624
      },
      "fact": {
-      "n": 54,
-      "revert_rate": 0.426,
-      "mean_reversal": 0.0095,
-      "median_reversal": -0.002,
-      "sd": 0.0528
+      "n": 68,
+      "revert_rate": 0.456,
+      "mean_reversal": 0.0114,
+      "median_reversal": -0.0006,
+      "sd": 0.0544
      },
      "mixed": {
       "n": 1,
@@ -37,10 +37,10 @@
       "mean_reversal": null
      }
     },
-    "spread": -0.0224,
-    "spread_w": -0.0213,
-    "t": -2.37,
-    "t_naive": -2.91,
+    "spread": -0.024,
+    "spread_w": -0.0232,
+    "t": -2.8,
+    "t_naive": -3.36,
     "clusters": 4,
     "cluster_by": "week",
     "verdict": "not enough scored labels yet",
@@ -96,18 +96,18 @@
     "test": "gap_gt_0",
     "horizons": {
      "5": {
-      "n_flow": 541,
-      "n_fact": 54,
-      "flow_mean": -0.0129,
-      "fact_mean": 0.0095,
-      "flow_mean_w": -0.0133,
-      "fact_mean_w": 0.008,
+      "n_flow": 558,
+      "n_fact": 68,
+      "flow_mean": -0.0126,
+      "fact_mean": 0.0114,
+      "flow_mean_w": -0.013,
+      "fact_mean_w": 0.0103,
       "flow_median": -0.0152,
-      "fact_median": -0.002,
-      "spread": -0.0224,
-      "spread_w": -0.0213,
-      "t_naive": -2.91,
-      "t_clustered": -2.37,
+      "fact_median": -0.0006,
+      "spread": -0.024,
+      "spread_w": -0.0232,
+      "t_naive": -3.36,
+      "t_clustered": -2.8,
       "clusters": 4,
       "cluster_by": "week",
       "verdict": "not enough scored labels yet (need 300 of each)"
@@ -147,18 +147,18 @@
     "test": "gap_gt_0",
     "horizons": {
      "5": {
-      "n_flow": 87,
-      "n_fact": 26,
-      "flow_mean": -0.0223,
-      "fact_mean": -0.0033,
-      "flow_mean_w": -0.0246,
-      "fact_mean_w": -0.0033,
+      "n_flow": 89,
+      "n_fact": 32,
+      "flow_mean": -0.0224,
+      "fact_mean": -0.004,
+      "flow_mean_w": -0.0249,
+      "fact_mean_w": -0.004,
       "flow_median": -0.028,
-      "fact_median": -0.0052,
-      "spread": -0.019,
-      "spread_w": -0.0213,
-      "t_naive": -1.73,
-      "t_clustered": -2.16,
+      "fact_median": -0.0096,
+      "spread": -0.0184,
+      "spread_w": -0.0208,
+      "t_naive": -1.68,
+      "t_clustered": -2.12,
       "clusters": 3,
       "cluster_by": "week",
       "verdict": "not enough scored labels yet (need 200 of each)"
