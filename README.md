@@ -15,12 +15,12 @@ scored labels of each and a t-statistic of at least 2, computed with moves group
 (21 days) so that one busy day cannot count as hundreds of independent results, and with the most extreme 1% of
 outcomes at each end capped.
 
-## Status (2026-11-24)
+## Status (2026-11-25)
 
-- days chained: **38** · head: `f24067e733e6252a484d42f5ca15c8d3c88bf2943cf876fd448f4462920d2828`
-- labels so far: **2928**
-- 5 trading days: NOT PROVEN — the gap is not significant once same-day moves are grouped (flow n=1843, fact n=696, gap 0.0016, clustered t 0.29)
-- 21 trading days: not enough scored labels yet (flow n=787, fact n=153, gap -0.0206, clustered t None)
+- days chained: **39** · head: `98579157faff226a2eb81811f962ffa05313a31a42255396490e512047ed8da6`
+- labels so far: **2972**
+- 5 trading days: NOT PROVEN — the gap is not significant once same-day moves are grouped (flow n=1922, fact n=705, gap 0.002, clustered t 0.38)
+- 21 trading days: not enough scored labels yet (flow n=833, fact n=188, gap -0.0199, clustered t None)
 
 ## Pre-registered claims
 
@@ -28,12 +28,12 @@ Written down, fingerprinted and published before the live data that will judge t
 
 | id | claim | registered | counts from | horizon | live gap · t · verdict | backtest gap · t |
 |---|---|---|---|---|---|---|
-| P1 | Fact-labelled moves keep going more than flow-labelled moves (all big moves) | 2026-10-05 | 2026-10-02 | 5d | +0.16% · 0.29 · NOT PROVEN | +0.47% · 5.76 |
-| P1 | Fact-labelled moves keep going more than flow-labelled moves (all big moves) | 2026-10-05 | 2026-10-02 | 21d | -2.06% · None · not enough scored labels yet (need 300 of each) | +0.61% · 3.41 |
-| S1 | No-news drops recover more than news drops over a month (down moves) | 2026-10-05 | 2026-10-05 | 21d | +1.27% · None · not enough scored labels yet (need 200 of each) | +0.82% · 2.67 |
-| S2 | The gap is clearest for 3–5σ moves | 2026-10-05 | 2026-10-05 | 5d | +0.80% · 1.32 · NOT PROVEN | +0.74% · 5.3 |
-| S2 | The gap is clearest for 3–5σ moves | 2026-10-05 | 2026-10-05 | 21d | -3.04% · None · not enough scored labels yet (need 200 of each) | +1.04% · 3.57 |
-| X1 | Up moves over a month — watching, no prediction | 2026-10-05 | 2026-10-05 | 21d | -4.24% · None · watching — no prediction registered | +0.38% · 1.52 |
+| P1 | Fact-labelled moves keep going more than flow-labelled moves (all big moves) | 2026-10-05 | 2026-10-02 | 5d | +0.20% · 0.38 · NOT PROVEN | +0.47% · 5.76 |
+| P1 | Fact-labelled moves keep going more than flow-labelled moves (all big moves) | 2026-10-05 | 2026-10-02 | 21d | -1.99% · None · not enough scored labels yet (need 300 of each) | +0.61% · 3.41 |
+| S1 | No-news drops recover more than news drops over a month (down moves) | 2026-10-05 | 2026-10-05 | 21d | -0.11% · None · not enough scored labels yet (need 200 of each) | +0.82% · 2.67 |
+| S2 | The gap is clearest for 3–5σ moves | 2026-10-05 | 2026-10-05 | 5d | +0.77% · 1.3 · NOT PROVEN | +0.74% · 5.3 |
+| S2 | The gap is clearest for 3–5σ moves | 2026-10-05 | 2026-10-05 | 21d | -3.68% · None · not enough scored labels yet (need 200 of each) | +1.04% · 3.57 |
+| X1 | Up moves over a month — watching, no prediction | 2026-10-05 | 2026-10-05 | 21d | -3.22% · None · watching — no prediction registered | +0.38% · 1.52 |
 
 ## Files
 
