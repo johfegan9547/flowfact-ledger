@@ -1,9 +1,9 @@
 {
- "as_of": "2026-11-25",
+ "as_of": "2026-11-26",
  "version": "ff-1",
  "days_chained": 39,
  "head": "98579157faff226a2eb81811f962ffa05313a31a42255396490e512047ed8da6",
- "released_through": "2026-10-26",
+ "released_through": "2026-10-27",
  "live": {
   "labels": 2972,
   "method": "v2: clustered t (week \u22645d, month >5d), reversals winsorised 1%/99%",

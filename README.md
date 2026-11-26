@@ -15,7 +15,7 @@ scored labels of each and a t-statistic of at least 2, computed with moves group
 (21 days) so that one busy day cannot count as hundreds of independent results, and with the most extreme 1% of
 outcomes at each end capped.
 
-## Status (2026-11-25)
+## Status (2026-11-26)
 
 - days chained: **39** · head: `98579157faff226a2eb81811f962ffa05313a31a42255396490e512047ed8da6`
 - labels so far: **2972**
